@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Georgia, serif;
 }
 
 *,
@@ -15,4 +17,50 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+}
+
+header img {
+  display: flex;
+  grid-area: header;
+  z-index: -1;
+}
+
+h1 {
+ grid-row: 2;
+ grid-column: 1;
+ width: 14rem;
+ margin: 1rem;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "header header"
+    "main1 main2"
+    "main1 main2";
+  margin: 0;
+}
+
+main {
+  display: contents;
+}
+
+main figure:nth-child(1) {
+  grid-area: main1;
+}
+
+main figure:nth-child(2) {
+  grid-area: main2;
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+nav {
+  grid-area: header;
+  grid-column: 2;
+  z-index: 1;
 }
