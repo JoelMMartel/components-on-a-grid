@@ -25,20 +25,20 @@ header img {
 }
 
 h1 {
- grid-row: 2;
- display: flex;
- grid-column: 1;
- width: 14rem;
- margin: 1rem;
- z-index: 100;
+  grid-row: 2;
+  display: flex;
+  grid-column: 1;
+  width: 14rem;
+  margin: 1rem;
+  z-index: 100;
 }
 
 body {
   display: grid;
   background-color: #f2f1ed;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-areas: 
-    
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+
     "header header"
     "header header"
     "main1 main2"
@@ -55,8 +55,8 @@ main {
 
 figure {
   display: grid;
-  grid-template-areas: 
-    
+  grid-template-areas:
+
     "figure"
     "caption";
 }
@@ -87,7 +87,7 @@ main figure:nth-child(2) img {
   justify-content: center;
 }
 
-nav ul{
+nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -101,8 +101,7 @@ nav {
 li a {
   font-family: "Patua One", sans-serif;
   color: #fff;
-  font-size: 2rem;  
-
+  font-size: 2rem;
 }
 
 li {
@@ -118,4 +117,3 @@ h2 {
 p {
   margin: 0;
 }
-
